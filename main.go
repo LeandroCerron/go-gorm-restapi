@@ -33,7 +33,7 @@ func main() {
 	router.HandleFunc("/tasks", routes.GetTasks).Methods("GET")
 	router.HandleFunc("/task", routes.GetTask).Methods("GET")
 	router.HandleFunc("/tasks", routes.PostTasks).Methods("POST")
-	router.HandleFunc("/tasks/{id}", routes.DeleteTasks).Methods("DELETE")
+	router.HandleFunc("/task", routes.DeleteTasks).Methods("DELETE")
 
 	http.ListenAndServe(":3000", router)
 }

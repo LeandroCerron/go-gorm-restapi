@@ -9,7 +9,7 @@ import (
 	"gorm.io/gorm/logger"
 )
 
-const DSN = "host=localhost user=lean password=1234 dbname=gorm port=5432"
+const DSN = "host=localhost user=user password=pass dbname=gorm port=5432"
 
 var DB *gorm.DB
 
